@@ -5,10 +5,17 @@
       "framework": "vite"
     },
     "backend": {
-      "root": "backend/"
+      "root": "backend/",
+      "entrypoint": "backend.wsgi:application"
     }
   },
   "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "backend"
+      }
+    },
     {
       "source": "/(.*)",
       "destination": {
