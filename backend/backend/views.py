@@ -208,7 +208,6 @@ def my_applications(request):
 
 
 # =========================
-# RECRUITER APPLICATIONS (SERIALIZER திருத்தம்)
 # =========================
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
@@ -231,7 +230,6 @@ def recruiter_applications(request):
 
 
 # =========================
-# RECRUITER DASHBOARD STATS (புதிய API)
 # =========================
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
